@@ -5,7 +5,7 @@ function perimetroCuadrado(lado) {
 }
 
 function areaCuadrado(lado) {
-    return Math.pow(lado, 2); 
+    return Math.pow(lado, 2);
 }
 
 // Codigo del triangulo
@@ -26,4 +26,18 @@ function perimetroCirculo(radio) {
 
 function areaCirculo(radio) {
     return Math.pow(radio, 2) * Math.PI;
+}
+
+// Codigo de HTML
+
+function onClickPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado").value;
+    const resultado = perimetroCuadrado(input);
+    alert(`Resultado: ${resultado} cm`);
+}
+
+function onClickAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado").value;
+    const resultado = areaCuadrado(input);
+    alert(`Resultado: ${resultado} cm²`);
 }

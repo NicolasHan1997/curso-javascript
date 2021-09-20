@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas</title>
 </head>
+
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header>
+        <h1>Figuras Geométricas</h1>
+    </header>
+
+    <section>
+        <h2>Calcula el área y perímetro de un Cuadrado</h2>
+        <form>
+            <label for="InputCuadrado">Longitud del lado (en cm):</label>
+            <input type="number" id="InputCuadrado" />
+            <button type="button" onclick="onClickPerimetroCuadrado()">Calcular Perímetro</button>
+            <button type="button" onclick="onClickAreaCuadrado()">Calcular Área</button>
+        </form>
+    </section>
 
     <script src="figuras.js"></script>
 </body>
+
 </html>
