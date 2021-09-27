@@ -9,6 +9,24 @@
 </head>
 
 <body>
+    <header>
+        <h1>Porcentajes y Descuentos</h1>
+    </header>
+    <section>
+        <h2>Calcula el precio a pagar con un descuento:</h2>
+        <form>
+            <div>
+                <label for="inputPrice">Precio del producto:</label>
+                <input id="inputPrice" type="number" />
+            </div>
+            <div>
+                <label for="inputDiscount">Porcentaje de descuento:</label>
+                <input id="inputDiscount" type="number" />
+            </div>
+            <button type="button" onclick="onClickCalculate()">Calcular</button>
+        </form>
+        <p id="resultPrice"></p>
+    </section>
 
     <script src="./descuentos.js"></script>
 </body>
