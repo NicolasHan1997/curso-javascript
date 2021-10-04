@@ -9,7 +9,51 @@
 </head>
 
 <body>
-    <h1>Calcular promedio, mediana y moda</h1>
+    <header>
+        <h1>Calcular promedio, media y moda</h1>
+    </header>
+
+    <h2>Calcular promedio</h2>
+    <form>
+        <div>
+            <label for="inputPromedio">Lista de números (separados por coma):</label>
+        </div>
+        <div>
+            <textarea id="inputPromedio"></textarea>
+        </div>
+        <button type="button"
+            onclick="onClickCalcular({input: 'inputPromedio', output: 'resultPromedio', funcion: calcularPromedio})">Calcular
+            promedio</button>
+    </form>
+    <p id="resultPromedio"></p>
+
+    <h2>Calcular media</h2>
+    <form>
+        <div>
+            <label for="inputMedia">Lista de números (separados por coma):</label>
+        </div>
+        <div>
+            <textarea id="inputMedia"></textarea>
+        </div>
+        <button type="button"
+            onclick="onClickCalcular({input: 'inputMedia', output: 'resultMedia', funcion: calcularMedia})">Calcular
+            promedio</button>
+    </form>
+    <p id="resultMedia"></p>
+
+    <h2>Calcular moda</h2>
+    <form>
+        <div>
+            <label for="inputModa">Lista de números (separados por coma):</label>
+        </div>
+        <div>
+            <textarea id="inputModa"></textarea>
+        </div>
+        <button type="button"
+            onclick="onClickCalcular({input: 'inputModa', output: 'resultModa', funcion: calcularModa})">Calcular
+            promedio</button>
+    </form>
+    <p id="resultModa"></p>
 
     <script src="promedios.js"></script>
 </body>
